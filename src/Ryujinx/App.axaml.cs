@@ -21,7 +21,7 @@ namespace Ryujinx.Ava
     {
         public override void Initialize()
         {
-            Name = $"Ryujinx {Program.Version}";
+            Name = $"NeoEmu {Program.Version}";
 
             AvaloniaXamlLoader.Load(this);
 
