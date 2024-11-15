@@ -41,7 +41,7 @@ namespace Ryujinx.Ava
 
             if (OperatingSystem.IsWindows() && !OperatingSystem.IsWindowsVersionAtLeast(10, 0, 17134))
             {
-                _ = MessageBoxA(IntPtr.Zero, "You are running an outdated version of Windows.\n\nRyujinx supports Windows 10 version 1803 and newer.\n", $"Ryujinx {Version}", MbIconwarning);
+                _ = MessageBoxA(IntPtr.Zero, "You are running an outdated version of Windows.\n\nNeoEmu supports Windows 10 version 1803 and newer.\n", $"NeoEmu {Version}", MbIconwarning);
             }
 
             PreviewerDetached = true;
@@ -222,7 +222,7 @@ namespace Ryujinx.Ava
 
         private static void PrintSystemInfo()
         {
-            Logger.Notice.Print(LogClass.Application, $"Ryujinx Version: {Version}");
+            Logger.Notice.Print(LogClass.Application, $"NeoEmu Version: {Version}");
             SystemInfo.Gather().Print();
 
             Logger.Notice.Print(LogClass.Application, $"Logs Enabled: {(Logger.GetEnabledLevels().Count == 0 ? "<None>" : string.Join(", ", Logger.GetEnabledLevels()))}");
